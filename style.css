@@ -1,0 +1,22 @@
+html {
+  background-color: #b48068;
+}
+
+h1 {
+  text-align: center;
+}
+
+#chart_wrapper {
+  background: #dbe1dc;
+  fill: none;
+  border: 1rem solid rgba(119 141 122);
+  margin-left: auto;
+  margin-right: auto;
+  width: 1300px;
+}
+#chart_div {
+  overflow-x: scroll;
+}
+
+dataTable.center {
+}
