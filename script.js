@@ -31,7 +31,7 @@ function drawChart() {
     [
       "Coneenci",
       "Jepudrice",
-      "<u> <b> 1/14/13045->2/1/13049 </b> </u> <br> (1->5yrs old) | ~ 4 yrs <br> •Under the care of the wood elf man and his wife in Jepudrice forest",
+      "<img src='./images/jeprudice_smaller.jpg'></img>",
       new Date(13045, 1, 14),
       new Date(13050, 2, 1)
     ],
