@@ -20,3 +20,7 @@ h1 {
 
 dataTable.center {
 }
+.modal-body img {
+  max-width: 100%;  /* Ensures the image does not exceed the modal width */
+  height: auto;     /* Maintains the aspect ratio */
+}
