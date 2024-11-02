@@ -1,50 +1,28 @@
-<html>
 
+<!DOCTYPE html>
+<html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>D &amp; D Timeline</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
 
 </head>
-
 <body>
+<!-- partial:index.partial.html -->
+<script src="https://www.gstatic.com/charts/loader.js"></script>
 
-  <script src="https://www.gstatic.com/charts/loader.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<div id="chart_wrapper">
 
-  <div class="container">
-    <div id="chart_wrapper" class="my-4">
-      <h1>
-        <span style="color: #778d7a;">D & D TIMELINE</span>
-      </h1>
+  <h1>
+    <p style="color:	#778d7a;">D & D TIMELINE</p>
+  </h1>
 
-      <div id="chart_div"></div>
-    </div>
+  <div id="chart_div">
   </div>
 
-  <!-- Modal for event details -->
-  <div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="eventModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="eventModalLabel">Event Details</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body" id="modalContent">
-          <!-- Event details will be injected here -->
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
+<!-- partial -->
+  <script  src="./script.js"></script>
 
 </body>
-
 </html>
