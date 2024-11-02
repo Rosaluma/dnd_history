@@ -39,24 +39,29 @@ function drawChart() {
   chart.draw(dataTable, options);
 
   google.visualization.events.addListener(chart, 'select', function () {
-    const selectedItem = chart.getSelection()[0];
-    if (selectedItem) {
-      const event = events[selectedItem.row];
-      let content = `<strong>${event[1]}</strong><br>`;
-      
-      if (event[1] === "Jepudrice") {
-        content += "<img src='./images/jepudrice.jpg' alt='Jepudrice' class='img-fluid'>";
-      }
-     else if (event [1] === "Birth") {
-       content += "<image src ='./images/conneenci_birth.jpg' alt= 'Coneenci_Birth' class= 'imag-fluid'>"; 
-     }
-        
-      else {
-        content += "Details for this event will be added later.";
-      }
+  const selectedItem = chart.getSelection()[0];
+  if (selectedItem) {
+    const event = events[selectedItem.row];
+    const startDate = event[2];
+    const endDate = event[3];
+    const duration = Math.ceil((endDate - startDate) / (1000 * 3600 * 24)); // Duration in days
+    const dateString = `${startDate.toLocaleDateString()} - ${endDate.toLocaleDateString()}`;
 
-      document.getElementById('modalContent').innerHTML = content;
-      $('#eventModal').modal('show');
+    // Update the modal header
+    document.getElementById('eventModalLabel').innerHTML = `${event[1]} (${dateString}, Duration: ${duration} days)`;
+
+    let content = `<strong>${event[1]}</strong><br>`;
+    
+    if (event[1] === "Jepudrice") {
+      content += "<img src='./images/jepudrice.jpg' alt='Jepudrice' class='img-fluid'>";
+    } else if (event[1] === "Birth") {
+      content += "<img src='./images/conneenci_birth.jpg' alt='Coneenci_Birth' class='img-fluid'>";
+    } else {
+      content += "Details for this event will be added later.";
     }
-  });
+
+    document.getElementById('modalContent').innerHTML = content;
+    $('#eventModal').modal('show');
+  }
+});
 }
