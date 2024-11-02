@@ -1,10 +1,12 @@
-google.charts.load("current", { packages: ["timeline"] });
-google.charts.setOnLoadCallback(drawChart);
+google.charts.load("current", {
+  callback: drawChart,
+  packages: ["timeline"]
+});
 
 function drawChart() {
-  const container = document.getElementById("chart_div");
-  const chart = new google.visualization.Timeline(container);
-  const dataTable = new google.visualization.DataTable();
+  var container = document.getElementById("chart_div");
+  var chart = new google.visualization.Timeline(container);
+  var dataTable = new google.visualization.DataTable();
 
   dataTable.addColumn({ type: "string", id: "Term" });
   dataTable.addColumn({ type: "string", id: "Event" });
