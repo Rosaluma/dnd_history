@@ -46,7 +46,12 @@ function drawChart() {
       
       if (event[1] === "Jepudrice") {
         content += "<img src='./images/jepudrice.jpg' alt='Jepudrice' class='img-fluid'>";
-      } else {
+      }
+     else if (event [1] === "Birth") {
+       content += "<image src ='./images/conneenci_birth.jpg' alt= 'Coneenci_Birth' class= 'imag-fluid'>"; 
+     }
+        
+      else {
         content += "Details for this event will be added later.";
       }
 
