@@ -44,7 +44,7 @@ function drawChart() {
       let content = `<strong>${event[1]}</strong><br>`;
       
       if (event[1] === "Jepudrice") {
-        content += "<img src='./images/jeprudice_smaller.jpg' alt='Jepudrice' class='img-fluid'>";
+        content += "<img src='./images/jeprudice.jpg' alt='Jepudrice' class='img-fluid'>";
       } else {
         content += "Details for this event will be added later.";
       }
