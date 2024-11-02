@@ -32,6 +32,7 @@ function drawChart() {
   const options = {
     height: 400,
     timeline: { showRowLabels: true, groupByRowLabel: true, colorByRowLabel: true },
+    tooltip: { trigger: 'none' },
     avoidOverlappingGridLines: true
   };
 
