@@ -1,26 +1,25 @@
-html {
-  background-color: #b48068;
-}
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-#chart_wrapper {
-  background: #dbe1dc;
-  border: 1rem solid rgba(119, 141, 122);
-  margin: 0 auto;
-  padding: 20px;
-  overflow-x: auto;
-}
-#chart_div {
-  width: 100%;
-  min-width: 1300px;
-  height: 400px;
-}
 
-dataTable.center {
-}
-.modal-body img {
-  max-width: 100%;  /* Ensures the image does not exceed the modal width */
-  height: auto;     /* Maintains the aspect ratio */
-}
+    body {
+      background-color: #b48068;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    #chart_wrapper {
+      background: #dbe1dc;
+      border: 1rem solid rgba(119, 141, 122);
+      margin: 0 auto;
+      padding: 20px;
+      overflow-x: auto;
+    }
+    #chart_div {
+      width: 100%;
+      min-width: 1300px;
+      height: 400px;
+    }
+    .modal-body img {
+      max-width: 100%;
+      height: auto;
+    }
+  
