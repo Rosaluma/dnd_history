@@ -5,21 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A timeline of D & D events.">
   <meta name="keywords" content="D&D, timeline, events">
-  <title>D &amp; D Timeline</title>
-  <link rel="stylesheet" href="style.css">
+  <title>D & D Timeline</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
 </head>
-<body style = "background-color: #b48068;">
+<body>
 
 <div class="container">
   <div id="chart_wrapper" class="my-4">
     <h1 style="color: #778d7a;">D & D TIMELINE</h1>
+
+    <!-- Button to open the filter modal -->
+    <button class="btn btn-primary" data-toggle="modal" data-target="#filterModal">Filter Events</button>
+
+    <!-- Chart Container -->
     <div id="chart_div"></div>
   </div>
 </div>
 
+<!-- Modal for selecting filters -->
+<div class="modal fade" id="filterModal" tabindex="-1" role="dialog" aria-labelledby="filterModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="filterModalLabel">Filter Events by Type</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Filter Checkboxes -->
+        <div>
+          <input type="checkbox" id="World Events" class="event-filter" checked>
+          <label for="World Events">World Events</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Coneenci" class="event-filter" checked>
+          <label for="Coneenci">Coneenci</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Soup" class="event-filter" checked>
+          <label for="Soup">Soup</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Filler Character" class="event-filter" checked>
+          <label for="Filler Character">Filler Character</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Filler Character 2" class="event-filter" checked>
+          <label for="Filler Character 2">Filler Character 2</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="applyFilters">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-<div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="eventModalLabel" aria-hidden="true" aria-live="polite">
+<!-- Modal for event details -->
+<div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="eventModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -40,7 +86,5 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
-<script src="script.js"></script>
-
 </body>
 </html>
