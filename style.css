@@ -1,5 +1,5 @@
 
-    body {
+    html {
       background-color: #b48068;
     }
     h1 {
@@ -18,8 +18,11 @@
       min-width: 1300px;
       height: 400px;
     }
-    .modal-body img {
-      max-width: 100%;
-      height: auto;
-    }
+
+dataTable.center {
+}
+.modal-body img {
+  max-width: 100%;  /* Ensures the image does not exceed the modal width */
+  height: auto;     /* Maintains the aspect ratio */
+}
   
