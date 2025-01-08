@@ -6,14 +6,14 @@
 
   let events = [
     ["World Events", "Event 1", new Date(13033, 1, 4), new Date(13042, 1, 4)],
-    ["Coneenci", "Birth", new Date(13044, 1, 4, 5), new Date(13044, 1, 4, 6)],
+    ["Coneenci", "Birth Of Conneenci", new Date(13044, 1, 4, 5), new Date(13044, 1, 4, 6)],
     ["Coneenci", "Jepudrice", new Date(13045, 0, 14), new Date(13050, 1, 1)],
     ["Coneenci", "Turuner Village", new Date(13050, 1, 4), new Date(13063, 2, 13)],
     ["Coneenci", "Omur Town", new Date(13063, 3, 13), new Date(13065, 9, 18)],
     ["Coneenci", "Aimless Adventures", new Date(13065, 9, 19), new Date(13067, 0)],
     ["Coneenci", "Campaigns with Comrades ", new Date(13067, 0), new Date(13067, 10)],
     ["Soup", "Origins", new Date(13049, 1, 4), new Date(13049, 1, 4)],
-    ["Filler Character", "Event 1", new Date(13046, 2, 4), new Date(13049, 2, 4)],
+    ["Isra Shadowfang", "Birth Of Isra", new Date(13045, 11, 22), new Date(13045, 11, 23)],
     ["Filler Character", "Event 2", new Date(13051, 2, 4), new Date(13054, 2, 4)],
     ["Filler Character 2", "Event 1", new Date(13056, 2, 4), new Date(13059, 2, 4)],
     ["Filler Character 2", "Event 2", new Date(13061, 2, 4), new Date(13064, 2, 4)]
@@ -67,9 +67,13 @@
     
     if (event[1] === "Jepudrice") {
       content += "<img src='./images/jepudrice.jpg' alt='Jepudrice' class='img-fluid'>";
-    } else if (event[1] === "Birth") {
+    } else if (event[1] === "Birth Of Conneenci") {
       content += "<img src='./images/conneenci_birth.jpg' alt='Coneenci_Birth' class='img-fluid'>";
-    } else {
+    } else if (event [1] === "Birth Of Isra"){
+      "<img src='./images/isra_birth.jpeg' alt='Isra_Birth' class='img-fluid'>";
+    }
+    else 
+    {
       content += "Details for this event will be added later.";
     }
 
@@ -87,7 +91,6 @@
   });
 
 
-// Open map modal
 // Open map modal
 document.getElementById("openMap").addEventListener("click", function () {
   $("#mapModal").modal("show");
