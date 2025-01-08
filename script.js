@@ -86,3 +86,23 @@
     drawChart();
   });
 
+
+// Open map modal
+document.getElementById("openMap").addEventListener("click", function () {
+  $("#mapModal").modal("show");
+});
+
+// Add click events for hotspots
+document.querySelectorAll(".hotspot").forEach(hotspot => {
+  hotspot.addEventListener("click", function () {
+    const locationDetails = {
+      location1: "This is Location 1. It has fascinating history and lore.",
+      location2: "This is Location 2. A place of great battles and legends.",
+    };
+
+    const locationId = this.id;
+    const details = locationDetails[locationId] || "No details available for this location.";
+    alert(details); // Replace with a modal or detailed display for better UX
+  });
+});
+
