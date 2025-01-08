@@ -88,21 +88,43 @@
 
 
 // Open map modal
+// Open map modal
 document.getElementById("openMap").addEventListener("click", function () {
   $("#mapModal").modal("show");
 });
 
+// Define hotspot details
+const locationDetails = {
+  location1: {
+    title: "Location 1",
+    description: "This is Location 1. It has a rich history and notable events.",
+  },
+  location2: {
+    title: "Location 2",
+    description: "This is Location 2. A place of great legends and adventures.",
+  },
+};
+
 // Add click events for hotspots
 document.querySelectorAll(".hotspot").forEach(hotspot => {
   hotspot.addEventListener("click", function () {
-    const locationDetails = {
-      location1: "This is Location 1. It has fascinating history and lore.",
-      location2: "This is Location 2. A place of great battles and legends.",
-    };
-
     const locationId = this.id;
-    const details = locationDetails[locationId] || "No details available for this location.";
-    alert(details); // Replace with a modal or detailed display for better UX
+    const details = locationDetails[locationId];
+
+    if (details) {
+      // Show details in a pop-up
+      const modalTitle = document.getElementById("mapModalLabel");
+      const modalBody = document.querySelector("#mapModal .modal-body");
+
+      modalTitle.innerText = details.title;
+      modalBody.innerHTML = `
+        <p>${details.description}</p>
+        <img src="./images/${locationId}.jpg" alt="${details.title}" class="img-fluid">
+      `;
+    } else {
+      alert("Details not available for this location.");
+    }
   });
 });
+
 
