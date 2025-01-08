@@ -20,7 +20,7 @@
   ];
 
   // Store selected categories
-  let selectedCategories = ["World Events", "Coneenci", "Soup", "Filler Character", "Filler Character 2"];
+  let selectedCategories = ["World Events", "Isra", "Coneenci", "Soup", "Filler Character", "Filler Character 2"];
 
   function drawChart() {
     const container = document.getElementById("chart_div");
