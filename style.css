@@ -26,3 +26,18 @@ dataTable.center {
   height: auto;     /* Maintains the aspect ratio */
 }
   
+.hotspot {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgba(255, 0, 0, 0.7);
+  border: 2px solid white;
+  transition: transform 0.3s ease;
+}
+
+.hotspot:hover {
+  transform: scale(1.2);
+  background-color: rgba(255, 0, 0, 1);
+}
