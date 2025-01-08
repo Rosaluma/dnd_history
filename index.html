@@ -82,7 +82,8 @@
     </div>
   </div>
 </div>
-  <!-- Dropdown to select map -->
+
+<!-- Dropdown to select map -->
 <div class="dropdown my-3">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="mapDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Select Map
@@ -92,7 +93,7 @@
   </div>
 </div>
 
-<!-- Modal for the map -->
+<!-- Modal for the interactive map -->
 <div class="modal fade" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="mapModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
@@ -103,11 +104,12 @@
         </button>
       </div>
       <div class="modal-body">
+        <!-- Map Container -->
         <div id="mapContainer" style="position: relative;">
           <img src="./images/RivulanMap.jpeg" alt="Map" class="img-fluid" id="mapImage">
-          <!-- Hotspots -->
-          <div class="hotspot" id="location1" style="position: absolute; top: 20%; left: 30%; width: 20px; height: 20px; background: red; border-radius: 50%; cursor: pointer;"></div>
-          <div class="hotspot" id="location2" style="position: absolute; top: 50%; left: 60%; width: 20px; height: 20px; background: blue; border-radius: 50%; cursor: pointer;"></div>
+          <!-- Hotspots (Locations) -->
+          <div class="hotspot" id="location1" style="top: 20%; left: 30%;" title="Location 1"></div>
+          <div class="hotspot" id="location2" style="top: 50%; left: 60%;" title="Location 2"></div>
         </div>
       </div>
       <div class="modal-footer">
