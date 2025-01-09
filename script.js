@@ -13,7 +13,7 @@
     ["Coneenci", "Aimless Adventures", new Date(13065, 9, 19), new Date(13067, 0)],
     ["Coneenci", "Campaigns with Comrades ", new Date(13067, 0), new Date(13067, 10)],
     ["Soup", "Origins", new Date(13049, 1, 4), new Date(13049, 1, 4)],
-    ["Isra Shadowfang", "Birth Of Isra", new Date(13045, 11, 22), new Date(13045, 11, 23)],
+    ["Isra Shadowfang", "Birth Of Isra", new Date(13045, 13, 22), new Date(13045, 13, 23)],
     ["Filler Character", "Event 2", new Date(13051, 2, 4), new Date(13054, 2, 4)],
     ["Filler Character 2", "Event 1", new Date(13056, 2, 4), new Date(13059, 2, 4)],
     ["Filler Character 2", "Event 2", new Date(13061, 2, 4), new Date(13064, 2, 4)]
